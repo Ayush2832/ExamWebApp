@@ -1,0 +1,16 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  deploy:
+
+    runs-on: VM1
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Show workspace
+      run: echo "Workspace is at $GITHUB_WORKSPACE"
