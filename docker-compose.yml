@@ -2,7 +2,7 @@ version: '3.8'
 services:
   frontend:
     build: ./frontend
-    images: frontend_comp
+    image: frontend_comp
     ports:
       - "5173:80"
     depends_on:
