@@ -20,4 +20,4 @@ jobs:
       run: rm -rf /home/ayush/ExamWebApp/* && cp -r $GITHUB_WORKSPACE/* /home/ayush/ExamWebApp/
 
     - name: Run the docker compose again
-      run: cd /home/ayush/ExamWebApp/ && docker compose up -d
+      run: cd /home/ayush/ExamWebApp/ && docker compose up -d --build --force-recreate
